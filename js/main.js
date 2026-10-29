@@ -135,18 +135,15 @@
     var call = document.getElementById("tour-call");
     var note = document.getElementById("tour-note");
     if (!section || !btn) return;
-    // TODO (Brandon): fill data-email / data-phone on <section id="visit"> in index.html.
+    // Main button links to Cal.com in the HTML. Optional extras from data attributes.
     var email = (section.getAttribute("data-email") || "").trim();
     var phone = (section.getAttribute("data-phone") || "").trim();
-    if (email) {
+    var mail = document.getElementById("tour-email");
+    if (email && mail) {
       var subject = "Tour request: 71 McLean Road";
       var body = "Hi,\n\nI'd like to tour 71 McLean Road, Weaverville.\n\nDays/times that work for me:\n\nName:\nPhone:\n\nThanks!";
-      btn.href = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-    } else {
-      btn.addEventListener("click", function (e) {
-        e.preventDefault();
-        note.textContent = "Tour requests open soon. Contact details will be posted here shortly.";
-      });
+      mail.href = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      mail.hidden = false;
     }
     if (phone && call) {
       call.href = "tel:" + phone.replace(/[^+\d]/g, "");

@@ -78,7 +78,7 @@
         }
       }
     </script>
-    <script src="js/main.js?v=1" defer></script>
+    <script src="js/main.js?v=2" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -97,7 +97,7 @@
             <li><a href="#location">Location</a></li>
           </ul>
         </nav>
-        <a class="btn btn-small" href="#visit">Request a tour</a>
+        <a class="btn btn-small" href="https://cal.com/71mclean/tour" target="_blank" rel="noopener noreferrer">Request a tour<span class="visually-hidden"> (opens in a new tab)</span></a>
       </div>
     </header>
 
@@ -124,7 +124,7 @@
           -->
           <div class="hero-actions">
             <a class="btn" href="#photos">See all 19 photos</a>
-            <a class="btn btn-ghost" href="#visit">Request a tour</a>
+            <a class="btn btn-ghost" href="https://cal.com/71mclean/tour" target="_blank" rel="noopener noreferrer">Request a tour<span class="visually-hidden"> (opens in a new tab)</span></a>
           </div>
         </div>
         <button type="button" class="hero-toggle" aria-pressed="false" hidden>
@@ -304,22 +304,23 @@
       </section>
 
       <!-- ====================== SCHEDULE A TOUR ======================= -->
-      <!-- TODO (Brandon): set your contact details in the data attributes on
-           the section below. Leave either blank to hide it.
-             data-email="you@example.com"   -> button opens a pre-filled email
-             data-phone="+18285550000"      -> adds a "Call or text" button
-           Nothing is invented here; until you fill these in, the button shows
-           a "contact details coming soon" note. -->
+      <!-- Tour requests go to Cal.com (https://cal.com/71mclean/tour; account
+           bobbysox322@gmail.com, username 71mclean). Each request is approved
+           manually by the owner. Plain link-out, so no CSP change is needed.
+           Optional extras (leave blank to hide):
+             data-email="you@example.com"   -> adds an "Email us" link
+             data-phone="+18285550000"      -> adds a "Call or text" button -->
       <section class="section visit" id="visit" aria-labelledby="visit-title" data-email="" data-phone="">
         <div class="container visit-inner">
           <p class="kicker">Visit</p>
           <h2 id="visit-title">Schedule a tour</h2>
-          <p class="lede">See the home in person. Send a note with a few days and times that work for you, and we will get back to you to confirm.</p>
+          <p class="lede">See the home in person. Pick a day and time that works for you and send a request for a 30-minute showing.</p>
           <div class="visit-actions">
-            <a class="btn btn-large" id="tour-request" href="#visit">Request a tour</a>
+            <a class="btn btn-large" id="tour-request" href="https://cal.com/71mclean/tour" target="_blank" rel="noopener noreferrer">Request a tour<span class="visually-hidden"> (opens in a new tab)</span></a>
+            <a class="btn btn-ghost-dark btn-large" id="tour-email" href="#visit" hidden>Email us</a>
             <a class="btn btn-ghost-dark btn-large" id="tour-call" href="#visit" hidden>Call or text</a>
           </div>
-          <p class="visit-note" id="tour-note" role="status"></p>
+          <p class="visit-note" id="tour-note">Every request is reviewed by the owner, who will confirm your time by email.</p>
         </div>
       </section>
     </main>
