@@ -17,10 +17,11 @@
                             Zillow says 3,011 sq ft, Spokeo says 2,046 sq ft.
                             TODO: confirm with county records / appraisal
                             before showing it anywhere.
-           Price .......... NOT SHOWN. See the "OPTIONAL PRICE SLOT" below.
+           Price .......... $540,000 (asking, set by Brandon Oct 2026).
+                            Shown in hero, facts strip, meta + JSON-LD offers.
          ===================================================================== -->
     <title>71 McLean Road, Weaverville, NC | For sale by owner</title>
-    <meta name="description" content="For sale by owner: a 4-bedroom, 3-bath home built in 1990 on about an acre in Weaverville, NC, roughly 20 minutes from Asheville. Waterfall pond, screened porch, lower level with separate entrance, workshop and shed." />
+    <meta name="description" content="For sale by owner, offered at $540,000: a 4-bedroom, 3-bath home built in 1990 on about an acre in Weaverville, NC, roughly 20 minutes from Asheville. Waterfall pond, screened porch, lower level with separate entrance, workshop and shed." />
     <link rel="canonical" href="https://bobbysox322.github.io/71mclean-preview/" />
     <meta name="robots" content="noindex,nofollow" />
     <meta name="theme-color" content="#1f3d32" />
@@ -29,7 +30,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="71 McLean Road" />
     <meta property="og:title" content="71 McLean Road, Weaverville, NC | For sale by owner" />
-    <meta property="og:description" content="4 bedrooms, 3 baths and about an acre in Weaverville, NC, with a waterfall pond, screened porch and a lower level with its own entrance." />
+    <meta property="og:description" content="$540,000 · 4 bedrooms, 3 baths and about an acre in Weaverville, NC, with a waterfall pond, screened porch and a lower level with its own entrance." />
     <meta property="og:url" content="https://bobbysox322.github.io/71mclean-preview/" />
     <meta property="og:image" content="https://bobbysox322.github.io/71mclean-preview/images/og-cover.jpg" />
     <meta property="og:image:width" content="1200" />
@@ -37,7 +38,7 @@
     <meta property="og:image:alt" content="The house at 71 McLean Road seen across its side lawn, with autumn trees behind it." />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="71 McLean Road, Weaverville, NC | For sale by owner" />
-    <meta name="twitter:description" content="4 bedrooms, 3 baths and about an acre in Weaverville, NC, with a waterfall pond, screened porch and a lower level with its own entrance." />
+    <meta name="twitter:description" content="$540,000 · 4 bedrooms, 3 baths and about an acre in Weaverville, NC, with a waterfall pond, screened porch and a lower level with its own entrance." />
     <meta name="twitter:image" content="https://bobbysox322.github.io/71mclean-preview/images/og-cover.jpg" />
 
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -45,17 +46,17 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="preload" as="image" href="images/photos/01-exterior-side-lawn.webp" type="image/webp" />
     <!-- Bump ?v= after editing so browsers fetch the new file (see _headers). -->
-    <link rel="stylesheet" href="css/styles.css?v=2" />
+    <link rel="stylesheet" href="css/styles.css?v=3" />
 
-    <!-- Structured data: only verified facts. No price, no square footage,
-         no coordinates. TODO: add "offers" with price if you publish one. -->
+    <!-- Structured data: only verified facts plus the asking price.
+         No square footage, no coordinates. -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "RealEstateListing",
         "name": "71 McLean Road, Weaverville, NC 28787",
         "url": "https://bobbysox322.github.io/71mclean-preview/",
-        "description": "For sale by owner: 4-bedroom, 3-bath home built in 1990 on about 1.04 acres in Weaverville, NC.",
+        "description": "For sale by owner, offered at $540,000: 4-bedroom, 3-bath home built in 1990 on about 1.04 acres in Weaverville, NC.",
         "image": [
           "https://bobbysox322.github.io/71mclean-preview/images/og-cover.jpg",
           "https://bobbysox322.github.io/71mclean-preview/images/photos/01-exterior-side-lawn.jpg",
@@ -75,6 +76,13 @@
           "numberOfBedrooms": 4,
           "numberOfBathroomsTotal": 3,
           "yearBuilt": 1990
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": 540000,
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "businessFunction": "http://purl.org/goodrelations/v1#Sell"
         }
       }
     </script>
@@ -116,12 +124,11 @@
           <p class="eyebrow">For sale by owner &middot; Weaverville, North Carolina</p>
           <h1 id="hero-title">71 McLean Road</h1>
           <p class="hero-sub">Weaverville, NC 28787</p>
+          <!-- PRICE: asking price shown here, in the facts strip and in JSON-LD "offers". -->
+          <p class="hero-price"><span class="hero-price-label">Offered at</span> $540,000</p>
           <p class="hero-facts">
-            <span>4 bedrooms</span><span aria-hidden="true">&middot;</span><span>3 baths</span><span aria-hidden="true">&middot;</span><span>About 1 acre</span><span aria-hidden="true">&middot;</span><span>Built 1990</span>
+            <span><strong>4</strong> bedrooms</span><span aria-hidden="true">&middot;</span><span><strong>3</strong> baths</span><span aria-hidden="true">&middot;</span><span>About 1 acre</span><span aria-hidden="true">&middot;</span><span>Built 1990</span>
           </p>
-          <!-- OPTIONAL PRICE SLOT (TODO: Brandon). Uncomment to show a price:
-          <p class="hero-price">Offered at $___,___</p>
-          -->
           <div class="hero-actions">
             <a class="btn" href="#photos">See all 19 photos</a>
             <a class="btn btn-ghost" href="https://cal.com/71mclean/tour" target="_blank" rel="noopener noreferrer">Request a tour<span class="visually-hidden"> (opens in a new tab)</span></a>
@@ -137,12 +144,24 @@
       <section class="facts" aria-label="Key facts">
         <div class="container">
           <dl class="facts-grid">
+            <div class="fact-price"><dt>Asking price</dt><dd>$540,000</dd></div>
             <div><dt>Bedrooms</dt><dd>4</dd></div>
             <div><dt>Bathrooms</dt><dd>3</dd></div>
             <div><dt>Lot</dt><dd>1.04 <small>acres</small></dd></div>
             <div><dt>Year built</dt><dd>1990</dd></div>
             <!-- Square footage intentionally omitted until confirmed (Zillow 3,011 vs Spokeo 2,046). -->
           </dl>
+          <!-- Feature list: from the 2020 listing description (zillow-notes.md). TODO (Brandon): confirm still accurate. -->
+          <ul class="facts-more" role="list" aria-label="More about the home">
+            <li>45,302 sq ft lot</li>
+            <li>Split-bedroom main level</li>
+            <li>Lower level with its own entrance</li>
+            <li>Mini kitchen downstairs</li>
+            <li>Large screened porch</li>
+            <li>Two waterfall features</li>
+            <li>Workshop + separate shed</li>
+            <li>Two laundry areas</li>
+          </ul>
         </div>
       </section>
 

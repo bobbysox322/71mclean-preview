@@ -286,3 +286,19 @@ body.lb-open { overflow: hidden; }
   .site-header, .hero-toggle, .lightbox, .visit-actions { display: none !important; }
   .hero { min-height: 0; color: #000; }
 }
+
+/* ---------------------------- Price + stats (v3) ---------------------------- */
+.hero-price { font-family: var(--font-display); font-size: clamp(1.9rem, 4.6vw, 2.8rem); font-weight: 600; color: #fff; line-height: 1.1; margin: 0.2rem 0 0.7rem; text-shadow: 0 2px 14px rgba(0, 0, 0, 0.4); }
+.hero-price-label { display: block; font-family: var(--font-body, inherit); font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: #f0c9a4; text-shadow: none; margin-bottom: 0.15rem; }
+.hero-facts { font-size: 1.15rem; }
+.hero-facts strong { font-size: 1.3rem; }
+.facts-grid .fact-price { grid-column: 1 / -1; }
+.facts-grid .fact-price dd { font-size: 2.4rem; color: #f0c9a4; }
+.facts-more { list-style: none; margin: 0; padding: 0.9rem 0 1.3rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.45rem 0.55rem; }
+.facts-more li { font-size: 0.88rem; color: #e6dcc8; border: 1px solid rgba(244, 236, 220, 0.28); border-radius: 999px; padding: 0.28rem 0.8rem; }
+@media (min-width: 700px) {
+  .facts-grid { grid-template-columns: repeat(5, 1fr); }
+  .facts-grid .fact-price { grid-column: auto; }
+  .facts-grid .fact-price dd { font-size: 2.2rem; }
+  .facts-more { border-top: 1px solid rgba(244, 236, 220, 0.15); }
+}
